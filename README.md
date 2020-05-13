@@ -60,7 +60,7 @@ Let's set up a few global packages.  Ubuntu differs slightly from other UNIX she
 
 `sudo npm install -g npm@latest` - latest npm
 
-`sudo npm install -g n` - This is N, which lets us control our version of Node we are on.  Typing `n lts` will show the last stable version of Node, while `n latest` will show the latest version.  By typing `n [version#] you will install that version of Node.  By typing the command `n` you will be able to scroll and choose which Node you want to use.
+`sudo npm install -g n` - This is N, which lets us control our version of Node we are on.  Typing `n lts` will show the last stable version of Node, while `n latest` will show the latest version.  By typing `n [version#]` you will install that version of Node.  By typing the command `n` you will be able to scroll and choose which Node you want to use.
 
 
 
@@ -107,7 +107,10 @@ Then, paste this in the file:
         "semi": ["error", "always"]    //enforce semi-colon usage
     }
 }
-
 ```
+
+## Reminder About Git
+
+not sure yet...
 
 
