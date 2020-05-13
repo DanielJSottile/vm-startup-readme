@@ -111,6 +111,6 @@ Then, paste this in the file:
 
 ## Reminder About Git
 
-not sure yet...
+not sure yet... testing
 
 
