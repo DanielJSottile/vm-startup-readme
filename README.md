@@ -25,7 +25,7 @@ Here, click the large link which will direct you to https://www.virtualbox.org/w
 
 Click the "Windows Host" to begin the download and setup.
 
-![TEST](http://imgur.com/9NhQ77Q.png "VIRTUAL BOX")
+![Virtual Box](https://imgur.com/9NhQ77Q.png "VIRTUAL BOX")
 
 # VM Setup
 
@@ -35,9 +35,15 @@ First we will be installing the newest version of Ubuntu, 20.04 Focal Fossil.  h
 
 Choose the Desktop Image
 
+![Focal](https://imgur.com/gTOGdBb.png "Focal")
+
+
 ## In VirtualBox
 
 First, go into Virtual Box and select "New"
+
+![Select New](https://imgur.com/DYFnn9A.png "Select New")
+
 
 ### New Machine
 
@@ -45,7 +51,9 @@ Name your machine Ubuntu20.04
 This will help it recognize that it is indeed a Linux Machine.
 Make sure the other fields are filled out like this:
 
-## Create the Memory and Hard Disk
+![Machine Forms](https://imgur.com/A4FNXPG.png "new machine forms")
+
+## Allocate Memory and Create Hard Disk
 
 ### Memory Allocation
 
@@ -57,17 +65,25 @@ This will depend on the RAM on your machine:
 
 In this example, we have a 64GB RAM machine and have allocated 8GB or 8192 MB to it, but honestly you don't need to go above 5GB unless you have that kind of capacity.
 
+![Allocate Memory](https://imgur.com/0siEzLp.png "allocate memory")
+
 ### Create a Virtual Hard Disk
 
 Select the Create a Virtual Hard Disk and Continue
+
+![create vhd](https://imgur.com/e3dpLyC.png "create vhd")
 
 ### Hard Disk File Type
 
 Don't change anything here and Continue
 
+![Hdd File type](https://imgur.com/iQR8ZXr.png "hdd file type")
+
 ### Storage on Hard Disk
 
 Make sure Dynamically Allocated is selected
+
+![dynamically allocated](https://imgur.com/CTmfYFv.png "dynamically allocated")
 
 ### File Location and Size
 
@@ -75,11 +91,15 @@ Use the default File Location it chooses.
 
 10GB of hard disk space should be adequate for your VM, though you can go more if you have the space.
 
+![10gb space](https://imgur.com/zseYAMY.png "10 gb space")
+
 PRESS CREATE!  This might take a while, but SSD's go faster.
 
 ## Changing Settings
 
 Right Click on your new VM and go into Settings.  You'll only need to change the tabs listed below.
+
+![settings](https://imgur.com/RcUTzZN.png "settings")
 
 ### General Settings - Advanced
 
@@ -87,13 +107,19 @@ Go into General Settings
 
 On the Advanced Tab, set Shared Clipboard to Bidirectional.  You can optionally set Drag and Drop to this as well.
 
+![gen settings](https://imgur.com/SRt7Adr.png "gen settings")
+
 ### System - Processor
 
 In the System settings on the processor tab...
 
-You can see how many CPU's your machine can handle.  *Set this this to 1/2 - 1 (so if 4, set to 1, 8  set to 3, and 12  set to 5)*
+You can see how many CPU's your machine can handle.  *Set this this to (1/2 - 1) (so if 4, set to 1, 8  set to 3, and 12  set to 5)*
+
+![processor settings](https://imgur.com/igC3bgD.png "processor settings")
 
 Check all the extended features you can.  Some may not be checkable, this is fine.
+
+![processor settings2](https://imgur.com/B0sL75J.png "processor settings2")
 
 ### Display - Screen
 
@@ -103,6 +129,8 @@ Set your Video Memory to MAXIUMUM.
 
 Enable the 3D acceleration.
 
+![vid mem](https://imgur.com/Y9vKSk7.png "vid mem")
+
 ### Shared Folders
 
 You'll want to go to this tab and create a Shared Folder.  
@@ -111,15 +139,23 @@ When setting the Folder Path, you can name it whatever you like and put it where
 
 Check the Auto Mount box.
 
+![shared folders](https://imgur.com/lGPI9E4.png "shared folders")
+
 # Ubuntu Setup
 
-Great!  We can now boot our VM by selecting it and pressing the Green Start arrow!
+Great!  We can now boot our VM by selecting it and pressing the Green Start arrow or double clicking on our VM!
+
+![start](https://imgur.com/S69I1aP.png "start")
 
 ## Select Start Up Disk
 
 Now it will prompt you to select the startup disk.  Remember the Disk Image we downloaded earlier?
 
+![select disk](https://imgur.com/1LyTOHL.png "select disk")
+
 Select the disk image either from your downloads folder or wherever you have stored it.  It's probably a good idea to make a directory somewhere on your computer where you can keep these disk images in case you need them later.
+
+![disk](https://imgur.com/cztaKBA.png "disk")
 
 Click start!
 
@@ -129,6 +165,8 @@ Let it do it's thing until it reaches the Installer!
 
 You'll see this window.  Of course, we want to install this!
 
+![install](https://imgur.com/f7CTYEC.png "install")
+
 If you have a special keyboard setup, you'll change it in the next window.  Otherwise continue.
 
 ## Choosing our Install Settings
@@ -137,6 +175,8 @@ Make sure to choose MINIMAL INSTALLATION as otherwise, Ubuntu will install a lot
 
 Make sure the Download Updates box is checked.
 
+![install settings](https://imgur.com/BrWacqr.png "install settings")
+
 Press Continue
 
 ## Installation Type
@@ -144,6 +184,8 @@ Press Continue
 Make sure that you have Erase Disk and install Ubuntu selected.
 
 Press Install Now
+
+![erase disk](https://imgur.com/w7u0eOJ.png "erase disk")
 
 * DO NOT BE ALARMED ON THE NEXT POP UP * 
 
@@ -155,7 +197,11 @@ Next, you'll select your timezone, press continue.
 
 Next, you'll be able to set your username and password.  If you are concerned about being able to connect to your SSH on Github (if you have that set up) then you'll want your username to match.  In general, a good convention is all lowercase first character of your first name then last name.  The machine name will autofill and this is fine.
 
+![who are you](https://imgur.com/UHIGqL3.png "who are you")
+
 A password IS recommended for this.  You'll probably need to use it when doing global installations below.  Make sure that the radio button for having it required on login is checked.
+
+![machinename](https://imgur.com/bitCvjk.png "machinename")
 
 Press continue, and the installation will start!
 
@@ -169,7 +215,9 @@ Now you can log in and begin setting up your Ubuntu so you can begin coding righ
 
 ## Connect Online Accounts, Other Things
 
-- It will give you a screen to connect online accounts.  I'd connect Google if you have google accounts.
+- It will give you a screen to connect online accounts.  I'd connect Google if you have google accounts, but you can skip this.
+
+![onlineacc](https://imgur.com/RNrsiJc.png "onlineacc")
 
 - You can skip setting up Live Patch if you want...or you can set it up.
 
@@ -189,13 +237,19 @@ In order to work with the Guest Additions, you'll need to go into your terminal 
 
 `sudo apt update && sudo apt install gcc perl make --no-install-recommends`
 
+![sudo install](https://imgur.com/4mqRJsP.png "sudo install")
+
 Let it do its thing....
 
 ## Build Guest Additions
 
 Now you'll go to the upper taskbar and select 'Devices' > 'Insert Guest Additions CD Image'
 
+![insert guest additions](https://imgur.com/YGIjuHe.png "insert guest additions")
+
 This will mount a special 'cd' into your VM and you can run this as an installation!
+
+![run guest additions]https://imgur.com/hQI2Vkl.png "run guest additions")
 
 It will ask for your password, open a new terminal, and install modules.  Once this is done, you'll need to reboot your machine again.
 
