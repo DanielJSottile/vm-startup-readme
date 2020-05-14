@@ -25,7 +25,7 @@ Here, click the large link which will direct you to https://www.virtualbox.org/w
 
 Click the "Windows Host" to begin the download and setup.
 
-![TEST](https://imgur.com/9NhQ77Q "VIRTUAL BOX")
+![TEST](http://imgur.com/9NhQ77Q "VIRTUAL BOX")
 
 # VM Setup
 
