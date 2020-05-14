@@ -111,6 +111,8 @@ Then, paste this in the file:
 
 ## Reminder About Git
 
-not sure yet... testing
+The first time you use Git in bash it will ask for your username and password for Git.
+
+In VSCode when you do this for the first time, it will ask you for permissions.  Follow it in order to be able to push from the bash inside of VS Code.
 
 
